@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lora', serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.light-mode {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .header {
+    background: #333; /* Серый фон для темной темы */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header.light-mode {
+    background: #f4f4f4; /* Светлый фон для светлой темы */
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Увеличенное расстояние между ссылками */
+    margin-left: 20px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'UnifrakturMaguntia', cursive; /* Old London шрифт */
+    font-size: 24px;
+    letter-spacing: 2px; /* Расстояние между буквами */
+    text-transform: capitalize; /* Только первые буквы слов заглавные */
+    font-weight: bold; /* Жирный текст */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    color: #ccc;
+  }
+  
+  .theme-switcher {
+    margin-right: 20px;
+  }
+  
+  /* Переключатель темы */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .welcome {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .welcome h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: normal; /* Заголовки не жирные */
+  }
+  
+  .welcome p,
+  .content p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-variant: small-caps; /* Small Capitals */
+    font-weight: bold; /* Жирный текст */
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .welcome-image {
+    max-width: 40%; /* Уменьшаем картинку в два раза */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Центрирование картинки */
+  }
+  
+  .media {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирование содержимого */
+    gap: 50px; /* Увеличенное расстояние между картинкой и видео */
+    margin-top: 60px; /* Увеличенное расстояние от текста */
+  }
+  
+  .left-aligned {
+    flex-direction: row; /* Картинка слева */
+  }
+  
+  .right-aligned {
+    flex-direction: row-reverse; /* Картинка справа */
+  }
+  
+  .left-image,
+  .right-image {
+    max-width: 300px; /* Уменьшаем размер картинок */
+    height: auto;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .place {
+    display: none;
+  }
+  
+  .place h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: normal; /* Заголовки не жирные */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual London Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Подключение шрифтов -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora :wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap " rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#" data-place="big-ben">Big Ben</a></li>
+        <li><a href="#" data-place="tower-bridge">Tower Bridge</a></li>
+        <li><a href="#" data-place="buckingham-palace">Buckingham Palace</a></li>
+        <li><a href="#" data-place="british-museum">British Museum</a></li>
+      </ul>
+      <div class="theme-switcher">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Приветственная страница -->
+  <section id="welcome" class="welcome visible">
+    <h1>Welcome to the Virtual London Guide</h1>
+    <p>
+      welcome to your ultimate virtual tour of london, one of the most vibrant and historically rich cities in the world. 
+      this guide will take you on a journey through some of the most iconic landmarks and cultural treasures that define this magnificent city. 
+      whether you're planning a trip, reminiscing about past travels, or simply exploring from the comfort of your home, this guide is designed to immerse you in the essence of london.
+    </p>
+    <p>
+      from the grandeur of big ben to the architectural marvel of tower bridge, and from the regal splendor of buckingham palace to the intellectual haven of the british museum, 
+      each location offers a unique glimpse into the heart and soul of london. dive deeper into the history, architecture, and culture of these landmarks with detailed descriptions and captivating videos.
+    </p>
+    <p>
+      use the navigation links above to explore each site, or toggle between light and dark themes for a personalized viewing experience. enjoy your virtual journey through london!
+    </p>
+    <div class="image-container">
+      <img src="content/london-cityscape.png" alt="London Cityscape" class="welcome-image">
+    </div>
+  </section>
+
+  <!-- Основной контент -->
+  <main class="content">
+    <section id="big-ben" class="place hidden">
+      <h1>Big Ben: The Iconic Clock Tower</h1>
+      <p>
+        big ben, officially known as the elizabeth tower, is one of london's most recognizable landmarks. standing tall at the north end of the palace of westminster, 
+        this historic clock tower has been keeping time for over 150 years. its chimes are famous worldwide, marking the hours with precision and grandeur.
+      </p>
+      <p>
+        the tower itself is an architectural masterpiece, featuring intricate gothic revival design elements. visitors can admire its stunning exterior and learn about its fascinating history, 
+        including how it survived the blitz during world war ii. although the interior is not open to the public, guided tours of the houses of parliament often include views of the tower.
+      </p>
+      <div class="media left-aligned">
+        <img src="content/big-ben.png" alt="Big Ben" class="left-image">
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/GvVNWfLjX2o?si=CrH6KnRXPxANXng2" title="Big Ben Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="tower-bridge" class="place hidden">
+      <h1>Tower Bridge: A Symbol of Engineering Excellence</h1>
+      <p>
+        tower bridge is a combined bascule and suspension bridge in london, built between 1886 and 1894. spanning the river thames, it connects the boroughs of tower hamlets and southwark. 
+        its striking victorian gothic design makes it a favorite subject for photographers and tourists alike.
+      </p>
+      <p>
+        the bridge's central span can be raised to allow large ships to pass through, a feature that still operates today. visitors can explore the tower bridge exhibition, which includes a glass-floored walkway offering breathtaking views of the river below. 
+        learn about the bridge's construction, its role in london's history, and its modern-day significance.
+      </p>
+      <div class="media right-aligned">
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/Bl3akjUfM3U?si=HnQtaTR3kTqCThlz" title="Tower Bridge Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="content/tower-bridge.png" alt="Tower Bridge" class="right-image">
+      </div>
+    </section>
+
+    <section id="buckingham-palace" class="place hidden">
+      <h1>Buckingham Palace: The Heart of the Monarchy</h1>
+      <p>
+        buckingham palace serves as both the london residence and administrative headquarters of the monarch of the united kingdom. located in the city of westminster, 
+        it has been the principal royal residence since 1837 and is a symbol of british royalty and tradition.
+      </p>
+      <p>
+        the palace is renowned for its opulent state rooms, which are open to the public during the summer months. these rooms are adorned with priceless works of art and furnishings, 
+        showcasing the wealth and history of the british monarchy. don't miss the changing of the guard ceremony, a quintessential british tradition that draws crowds from around the world.
+      </p>
+      <div class="media left-aligned">
+        <img src="content/buckingham-palace.png" alt="Buckingham Palace" class="left-image">
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/NZFUt9xpb2U?si=JqUFpoHDapsk4BFM" title="Buckingham Palace Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="british-museum" class="place hidden">
+      <h1>British Museum: A Treasure Trove of History</h1>
+      <p>
+        the british museum is a museum dedicated to human history, art, and culture, located in the bloomsbury area of london. founded in 1753, it houses a vast collection of over eight million works, 
+        spanning thousands of years of history from across the globe.
+      </p>
+      <p>
+        highlights of the museum include the rosetta stone, the elgin marbles, and the egyptian mummies. each exhibit tells a story, offering insights into ancient civilizations and their contributions to modern society. 
+        admission is free, making it accessible to everyone who wishes to explore the wonders of human creativity and ingenuity.
+      </p>
+      <div class="media right-aligned">
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/ygkWTK8nbmo?si=K3u-Fs9fGRLqnW1K" title="British Museum Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="content/british-museum.png" alt="British Museum" class="right-image">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
